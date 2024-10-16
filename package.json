@@ -1,0 +1,13 @@
+{
+  "name": "micro-issue-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -F base run dev",
+    "dev-home": "pnpm -F home run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
