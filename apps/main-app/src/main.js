@@ -7,7 +7,13 @@ import microApp from "@micro-zoe/micro-app";
 createApp(App).mount('#app')
 
 microApp.start({
-    plugins: {
+    excludeAssetFilter (assetUrl) {
+        if (assetUrl === 'createVerticesFromHeightmap' || assetUrl === 'transferTypedArrayTest' || assetUrl === 'createVerticesFromQuantizedTerrainMesh') {
+          return true // 返回true则micro-app不会劫持处理当前文件
+        }
+        return false
+    },
+    plugins: {  
         modules: {
             'cesium-map': [{
                 loader(code, url) {
