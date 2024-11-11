@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@micro-zoe/micro-app": "^1.0.0-rc.13",
+    "@micro-zoe/micro-plugin-map": "^0.0.2",
     "vue": "^3.5.12"
   },
   "devDependencies": {
