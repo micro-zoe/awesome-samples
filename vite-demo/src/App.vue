@@ -1,5 +1,9 @@
 <script setup>
-
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
+setInterval(() => {
+  NProgress.start();
+}, 1000);
 </script>
 
 <template>

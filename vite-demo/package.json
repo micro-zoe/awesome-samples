@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "nprogress": "^0.2.0",
     "vue": "^3.5.12"
   },
   "devDependencies": {
