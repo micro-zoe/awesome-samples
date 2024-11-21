@@ -1,9 +1,13 @@
 <script setup>
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
-setInterval(() => {
+// setInterval(() => {
   NProgress.start();
-}, 1000);
+// }, 1000);
+setTimeout(() => {
+    NProgress.done();
+
+}, 2000);
 </script>
 
 <template>
